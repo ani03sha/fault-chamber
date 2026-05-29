@@ -1,0 +1,15 @@
+version: "2"
+
+linters:
+    enable:
+        - errcheck # unchecked errors — critical for a tool whose whole point is cleanup
+        - govet
+        - ineffassign
+        - staticcheck
+        - unused
+        - misspell
+        - revive # style/lint rules (replacement for golint)
+
+issues:
+    max-issues-per-linter: 0
+    max-same-issues: 0
